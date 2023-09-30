@@ -33,6 +33,7 @@ class Player:
         return " ".join(["".join(x) for x in updated_shape])
 
     def legal(self, pos_x: int, pos_y: int, game: Game) -> bool: # this function can not be static in its current implementation, because of the color
+        # is at least one notch connected to the other place
         if pos_x - 1 >= 0:
             if game.map[pos_x - 1][pos_y] == Field(self.color):
                 return False
