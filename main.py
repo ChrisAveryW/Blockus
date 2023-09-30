@@ -2,6 +2,7 @@
 from __future__ import annotations
 from enum import Enum
 from wrapper import fieldsize, shapes, shapesize
+import pygame
 
 
 class Field(Enum):
